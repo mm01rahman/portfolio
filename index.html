@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MD MUSHFIQUR RAHMAN — Portfolio</title>
+  <meta name="description" content="MD Mushfiqur Rahman — 4th‑year Software Engineering student building clean, fast, human‑friendly apps." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Arial", "Noto Sans", "sans-serif"] },
+          colors: {
+            brand: { DEFAULT: "#6366F1", 50: "#EEF2FF", 100: "#E0E7FF", 200: "#C7D2FE", 300: "#A5B4FC", 400: "#818CF8", 500: "#6366F1", 600: "#4F46E5", 700: "#4338CA", 800: "#3730A3", 900: "#312E81" }
+          },
+          boxShadow: {
+            soft: "0 8px 30px rgba(2, 6, 23, 0.08)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased">
+
+  <header class="sticky top-0 z-40 border-b border-slate-200/50 dark:border-slate-800/80 backdrop-blur bg-white/70 dark:bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="font-extrabold tracking-tight text-xl">
+          <span class="bg-gradient-to-r from-brand-400 to-brand-600 bg-clip-text text-transparent">Mushfiqur</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#about" class="hover:text-brand-600">About</a>
+          <a href="#skills" class="hover:text-brand-600">Skills</a>
+          <a href="#projects" class="hover:text-brand-600">Projects</a>
+          <a href="#experience" class="hover:text-brand-600">Experience</a>
+          <a href="#contact" class="hover:text-brand-600">Contact</a>
+          <a href="/cv.pdf" class="inline-flex items-center gap-2 rounded-full border border-slate-300/70 dark:border-slate-700 px-3 py-1.5 hover:border-brand-500 hover:text-brand-600 transition">Download CV</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#about" class="py-1">About</a>
+        <a href="#skills" class="py-1">Skills</a>
+        <a href="#projects" class="py-1">Projects</a>
+        <a href="#experience" class="py-1">Experience</a>
+        <a href="#contact" class="py-1">Contact</a>
+        <a href="/cv.pdf" class="py-1">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="relative">
+      <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(40rem_20rem_at_50%_-10%,theme(colors.brand.200/.5),transparent)] dark:bg-[radial-gradient(40rem_20rem_at_50%_-10%,theme(colors.brand.700/.3),transparent)]"></div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-white/70 dark:bg-slate-900/60 px-3 py-1 text-xs font-semibold text-brand-700 dark:text-brand-300 shadow-soft">
+              <span class="inline-block h-2 w-2 rounded-full bg-brand-500"></span> Available for internships & projects
+            </p>
+            <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+              <span class="bg-gradient-to-br from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">I build clean, fast, human‑friendly software</span>
+            </h1>
+            <p class="mt-5 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-xl">I’m <strong>MD MUSHFIQUR RAHMAN</strong>, a 4th‑year BSc Software Engineering student. I love turning ideas into simple UIs, data tools, and ML experiments.</p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="mailto:mm01rahman@gmial.com" class="inline-flex items-center justify-center rounded-full bg-brand px-4 py-2.5 text-white font-medium shadow-soft hover:bg-brand-600">Email me</a>
+              <a href="#projects" class="inline-flex items-center justify-center rounded-full border border-slate-300/70 dark:border-slate-700 px-4 py-2.5 font-medium hover:border-brand-500 hover:text-brand-600">View projects</a>
+              <a href="https://github.com/mm01rahman" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3 py-2 text-sm hover:text-brand-600">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.12-1.52-1.12-1.52-.92-.64.07-.63.07-.63 1.02.07 1.56 1.07 1.56 1.07 .9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.04-2.74-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.76 1.05a9.2 9.2 0 015.02 0c1.92-1.32 2.76-1.05 2.76-1.05 .55 1.43.2 2.49.1 2.75 .65.71 1.04 1.62 1.04 2.74 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.91 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.48A10.04 10.04 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="glass rounded-2xl shadow-soft p-6 border border-slate-200/60 dark:border-slate-800/60">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl p-4 border border-slate-200/60 dark:border-slate-800/60">
+                  <p class="text-xs text-slate-500">Primary stack</p>
+                  <p class="mt-2 font-semibold">Python · TensorFlow · JS · React · Tailwind</p>
+                </div>
+                <div class="rounded-xl p-4 border border-slate-200/60 dark:border-slate-800/60">
+                  <p class="text-xs text-slate-500">Interests</p>
+                  <p class="mt-2 font-semibold">Data · ML · Quant</p>
+                </div>
+                <div class="rounded-xl p-4 border border-slate-200/60 dark:border-slate-800/60">
+                  <p class="text-xs text-slate-500">Location</p>
+                  <p class="mt-2 font-semibold">Sylhet, Bangladesh</p>
+                </div>
+                <div class="rounded-xl p-4 border border-slate-200/60 dark:border-slate-800/60">
+                  <p class="text-xs text-slate-500">Availability</p>
+                  <p class="mt-2 font-semibold">Part‑time / Internship</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-3">
+          <div>
+            <h2 class="text-2xl font-bold tracking-tight">About</h2>
+          </div>
+          <div class="lg:col-span-2 space-y-4 text-slate-700 dark:text-slate-300">
+            <p>I’m a 4th‑year Software Engineering student who enjoys building practical things: dashboards, trading research tools, and clean UI components. My current focus: <strong>data‑driven apps</strong> and <strong>ML for real‑world problems</strong>.</p>
+            <p>Outside of classes, I prototype quant ideas, practice clean architecture, and contribute to student communities.</p>
+            <ul class="list-disc pl-6 grid gap-2">
+              <li>Comfortable with: Python, JavaScript, React, Tailwind, Django, MySQL</li>
+              <li>Learning: TensorFlow/PyTorch, RESTful ML serving, data viz</li>
+              <li>Tools: Git/GitHub, VS Code, Jupyter, TradingView</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="skills" class="py-16 sm:py-24 bg-slate-50 dark:bg-slate-900/30">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold tracking-tight">Skills</h2>
+        <div class="mt-6 flex flex-wrap gap-2">
+
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Python</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">JavaScript</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">React</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">PHP</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Tailwind CSS</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Django</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">MySQL</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Pandas</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">NumPy</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">TensorFlow</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Git/GitHub</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">Pine Script</span>
+          <span class="inline-flex items-center rounded-full bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 px-3 py-1 text-sm">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-2xl font-bold tracking-tight">Projects</h2>
+          <a href="https://github.com/mm01rahman" target="_blank" rel="noopener" class="text-sm font-medium hover:text-brand-600">See all →</a>
+        </div>
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 p-5 hover:shadow-soft transition">
+            <div class="relative aspect-[16/9] overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+            <img
+                src="/images/financeflow.png"
+                alt="Screenshot of the Accounting System (PHP + React)"
+                class="absolute inset-0 h-full w-full object-cover object-center"
+                loading="lazy"
+            />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Accounting System (PHP + React)</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Journal → Ledger → Trial Balance with clean UI and validation.</p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs">
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">PHP</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">React</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">MySQL</li>
+            </ul>
+            <div class="mt-4 flex gap-3 text-sm">
+              <a href="#" class="font-medium hover:text-brand-600">Live</a>
+              <a href="#" class="font-medium hover:text-brand-600">Code</a>
+            </div>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 p-5 hover:shadow-soft transition">
+            <div class="relative aspect-[16/9] overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+            <img
+                src="/images/backtest_1.png"
+                alt="Screenshot of the XAUUSD Strategy Backtester"
+                class="absolute inset-0 h-full w-full object-cover object-center"
+                loading="lazy"
+            />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">XAUUSD Strategy Backtester</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Python backtests with entry filters, risk rules, and session logic.</p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs">
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Python</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Pandas</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Matplotlib</li>
+            </ul>
+            <div class="mt-4 flex gap-3 text-sm">
+              <a href="#" class="font-medium hover:text-brand-600">Docs</a>
+              <a href="#" class="font-medium hover:text-brand-600">Code</a>
+            </div>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 p-5 hover:shadow-soft transition">
+            <div class="relative aspect-[16/9] overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800">
+            <img
+                src="/images/leaf_1.png"
+                alt="Screenshot of the Tomato Leaf Disease Classifier"
+                class="absolute inset-0 h-full w-full object-cover object-center"
+                loading="lazy"
+            />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Tomato Leaf Disease Classifier</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">5 Ensemble CNN models with custom preprocessing and augmentation.</p>
+            <ul class="mt-3 flex flex-wrap gap-2 text-xs">
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">TensorFlow</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Keras</li>
+              <li class="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-1">Python</li>
+            </ul>
+            <div class="mt-4 flex gap-3 text-sm">
+              <a href="#" class="font-medium hover:text-brand-600">Report</a>
+              <a href="#" class="font-medium hover:text-brand-600">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-16 sm:py-24 bg-slate-50 dark:bg-slate-900/30">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold tracking-tight">Experience & Education</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 p-6">
+            <h3 class="font-semibold">Additional Organizing Secretary — SWE Innovators Forum</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Organized tech events, coordinated teams, and supported student projects.</p>
+            <p class="mt-2 text-xs text-slate-500">2025 — Present · Sylhet</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 p-6">
+            <h3 class="font-semibold">BSc in Software Engineering — Metropolitan University</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Core CS, web dev, data analysis, and ML coursework.</p>
+            <p class="mt-2 text-xs text-slate-500">Year 4 · Sylhet, Bangladesh</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 items-start">
+          <div>
+            <h2 class="text-2xl font-bold tracking-tight">Let’s build something</h2>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Email me — I usually reply within 24 hours.</p>
+            <div class="mt-6 space-y-2 text-sm">
+              <p><strong>Email:</strong> <a class="text-brand-600 hover:underline" href="mailto:mm01rahman@gmail.com">mm01rahman@gmail.com</a></p>
+              <p><strong>GitHub:</strong> <a class="text-brand-600 hover:underline" href="https://github.com/mm01rahman" target="_blank" rel="noopener">github.com/mm01rahman</a></p>
+              <p><strong>LinkedIn:</strong> <a class="text-brand-600 hover:underline" href="https://www.linkedin.com/in/mm01rahman" target="_blank" rel="noopener">linkedin.com/in/mm01rahman</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200/70 dark:border-slate-800/70 py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>© <span id="y"></span> MD MUSHFIQUR RAHMAN. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/mm01rahman" target="_blank" rel="noopener" class="hover:text-brand-600">GitHub</a>
+        <a href="https://www.linkedin.com/in/mm01rahman" target="_blank" rel="noopener" class="hover:text-brand-600">LinkedIn</a>
+        <a href="https://www.facebook.com/mmrsakib01" target="_blank" rel="noopener" class="hover:text-brand-600">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
